@@ -1,5 +1,13 @@
 @import 'tailwindcss';
 
+@theme {
+  --color-primary: #080C2E;
+  --color-secondary: #640EF1;
+  --color-tertiary: #5D5D7C;
+
+  --font-clash: 'Clash Display', sans-serif;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
