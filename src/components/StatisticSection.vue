@@ -1,68 +1,53 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import Statistic1 from './icon/Statistic1.vue'
+import Statistic2 from './icon/Statistic2.vue'
+import Statistic3 from './icon/Statistic3.vue'
+import StatisticCard from './StatisticCard.vue'
+</script>
 
 <template>
-  <section id="hero">
-    <div class="flex items-center">
+  <section id="statistic">
+    <div class="flex items-center gap-16">
+      <div class="hero-img w-[500px]">
+        <img class="w-full" src="/hero2.png" alt="" />
+      </div>
       <div class="flex-1 flex flex-col gap-10">
-        <div id="hero-badge" class="flex items-center bg-white w-fit py-2 px-4 rounded-full gap-2">
-          <svg
-            width="25"
-            height="25"
-            viewBox="0 0 25 25"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 22.5C18.0228 22.5 22.5 18.0228 22.5 12.5C22.5 6.97715 18.0228 2.5 12.5 2.5C6.97715 2.5 2.5 6.97715 2.5 12.5C2.5 18.0228 6.97715 22.5 12.5 22.5Z"
-              stroke="#080C2E"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M8.50001 3.5H9.50001C7.55001 9.34 7.55001 15.66 9.50001 21.5H8.50001"
-              stroke="#080C2E"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M15.5 3.5C17.45 9.34 17.45 15.66 15.5 21.5"
-              stroke="#080C2E"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M3.5 16.5V15.5C9.34 17.45 15.66 17.45 21.5 15.5V16.5"
-              stroke="#080C2E"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M3.5 9.50001C9.34 7.55001 15.66 7.55001 21.5 9.50001"
-              stroke="#080C2E"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <p class="font-semibold">We host more than 120,000 websites</p>
-        </div>
         <div id="hero-text" class="space-y-2">
-          <h1 class="text-[70px] font-clash leading-none">
-            Grow Online <br class="hidden md:block" />
-            Business Faster.
+          <h1 class="text-5xl font-clash leading-14">
+            We Have Very <br class="hidden md:block" />
+            Strong Ecosystem
           </h1>
           <p class="text-tertiary leading-8">
             We provide a variety of servers to grow your users <br class="hidden md:block" />
             acquisition much user-friendly and boosting up sales.
           </p>
         </div>
+        <div class="space-y-5 mr-15">
+          <StatisticCard>
+            <template #icon>
+              <Statistic1 />
+            </template>
+            <template #title> $880 Mio </template>
+            <template #desc> Company budget saved </template>
+          </StatisticCard>
+          <StatisticCard>
+            <template #icon>
+              <Statistic2 />
+            </template>
+            <template #title> 450,392 </template>
+            <template #desc> All servers available </template>
+          </StatisticCard>
+          <StatisticCard>
+            <template #icon>
+              <Statistic3 />
+            </template>
+            <template #title> 189 Mio </template>
+            <template #desc> Websites are running good </template>
+          </StatisticCard>
+        </div>
         <div id="hero-btn" class="flex items-center">
           <button class="px-10 py-4 bg-secondary rounded-full text-white font-bold cursor-pointer">
-            Try Free Trial
+            Explore More
           </button>
           <button
             class="px-10 py-4 font-semibold text-secondary flex items-center gap-1 cursor-pointer"
@@ -131,9 +116,6 @@
             <span> Schedule a demo </span>
           </button>
         </div>
-      </div>
-      <div class="hero-img w-[500px]">
-        <img class="w-full" src="/hero1.png" alt="" />
       </div>
     </div>
   </section>
