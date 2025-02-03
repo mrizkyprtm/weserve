@@ -5,7 +5,7 @@ import AccordionItem from './AccordionItem.vue'
 
 <template>
   <section id="faq">
-    <div class="mt-56 flex flex-col gap-7">
+    <div class="mt-72 flex flex-col gap-7">
       <h2 class="text-[46px] font-clash text-center">Frequently Asked Question</h2>
 
       <Accordion :multiple="true">
