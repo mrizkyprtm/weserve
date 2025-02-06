@@ -12,7 +12,7 @@ import CTASection from '@/components/CTASection.vue'
 
 <template>
   <NavBar />
-  <main class="max-w-6xl mx-auto flex flex-col space-y-24 mt-15 px-4 xl:px-0">
+  <main class="max-w-6xl mx-auto flex flex-col space-y-24 mt-36 px-4 xl:px-0">
     <HeroSection />
     <PartnerSection />
     <FeatureSection />
