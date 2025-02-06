@@ -5,8 +5,8 @@ import AccordionItem from './AccordionItem.vue'
 
 <template>
   <section id="faq">
-    <div class="mt-72 flex flex-col gap-7">
-      <h2 class="text-[46px] font-clash text-center">Frequently Asked Question</h2>
+    <div class="lg:mt-72 flex flex-col gap-7">
+      <h2 class="text-4xl lg:text-[46px] font-clash text-center">Frequently Asked Question</h2>
 
       <Accordion :multiple="true">
         <div class="flex flex-col gap-4 flex-1">

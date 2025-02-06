@@ -4,7 +4,7 @@ import CtaCard from './CtaCard.vue'
 
 <template>
   <section id="cta">
-    <div class="bg-secondary p-12 rounded-2xl">
+    <div class="bg-secondary px-8 py-10 lg:p-12 rounded-2xl">
       <div class="flex flex-col lg:flex-row items-center gap-6">
         <div class="flex-1 space-y-8">
           <div
@@ -65,8 +65,10 @@ import CtaCard from './CtaCard.vue'
               acquisition much user-friendly and boosting up sales.
             </p>
           </div>
-          <div id="hero-btn" class="flex items-center">
-            <button class="px-8 py-3 bg-amber-300 rounded-full font-bold cursor-pointer">
+          <div id="hero-btn" class="flex flex-col lg:flex-row items-center">
+            <button
+              class="px-8 py-3 w-full lg:w-fit bg-amber-300 rounded-full font-bold cursor-pointer"
+            >
               Explore More
             </button>
             <button

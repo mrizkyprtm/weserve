@@ -16,7 +16,7 @@
       </div>
 
       <div
-        class="absolute left-1/2 -translate-1/2 mt-36 flex flex-row gap-x-10 h-[220px] overflow-clip z-50"
+        class="relative lg:absolute lg:left-1/2 lg:-translate-1/2 mt-5 lg:mt-36 flex flex-col lg:flex-row gap-x-10 h-full lg:h-[220px] overflow-clip z-50 space-y-5"
       >
         <div
           class="relative aspect-video overflow-hidden rounded-lg outline-0 hover:outline-4 hover:outline-secondary -outline-offset-4 group"

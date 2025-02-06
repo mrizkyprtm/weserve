@@ -8,8 +8,8 @@ import Feature4 from './icon/Feature4.vue'
 
 <template>
   <section class="features">
-    <h2 class="text-[46px] font-bold text-center mb-8 font-clash">Your Best Choice</h2>
-    <div class="grid grid-cols-4 gap-7">
+    <h2 class="text-4xl lg:text-[46px] font-bold text-center mb-8 font-clash">Your Best Choice</h2>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-7">
       <FeatureCard title="Extra Layers" desc="Making your project more secure avoiding DDoS">
         <template #icon>
           <Feature1 class="stroke-secondary group-hover:!stroke-white" />

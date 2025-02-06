@@ -7,13 +7,13 @@ import StatisticCard from './StatisticCard.vue'
 
 <template>
   <section id="statistic">
-    <div class="flex items-center gap-16">
-      <div class="hero-img w-[500px]">
+    <div class="flex flex-col lg:flex-row items-center gap-16">
+      <div class="hero-img w-full md:w-[500px]">
         <img class="w-full" src="/hero2.png" alt="" />
       </div>
       <div class="flex-1 flex flex-col gap-10">
         <div id="hero-text" class="space-y-2">
-          <h1 class="text-5xl font-clash leading-14">
+          <h1 class="text-[2.25rem] lg:text-5xl font-clash leading-14">
             We Have Very <br class="hidden md:block" />
             Strong Ecosystem
           </h1>
@@ -45,12 +45,14 @@ import StatisticCard from './StatisticCard.vue'
             <template #desc> Websites are running good </template>
           </StatisticCard>
         </div>
-        <div id="hero-btn" class="flex items-center">
-          <button class="px-10 py-4 bg-secondary rounded-full text-white font-bold cursor-pointer">
+        <div id="hero-btn" class="flex flex-col lg:flex-row items-center">
+          <button
+            class="w-full lg:w-fit px-10 py-4 bg-secondary rounded-full text-white font-bold cursor-pointer"
+          >
             Explore More
           </button>
           <button
-            class="px-10 py-4 font-semibold text-secondary flex items-center gap-1 cursor-pointer"
+            class="w-full lg:w-fit px-10 py-4 font-semibold text-secondary flex justify-center items-center gap-1 cursor-pointer"
           >
             <svg
               width="25"

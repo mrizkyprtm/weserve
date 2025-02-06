@@ -2,7 +2,7 @@
 
 <template>
   <section id="hero">
-    <div class="flex items-center">
+    <div class="flex flex-col lg:flex-row items-center gap-y-5">
       <div class="flex-1 flex flex-col gap-10">
         <div id="hero-badge" class="flex items-center bg-white w-fit py-2 px-4 rounded-full gap-2">
           <svg
@@ -51,7 +51,7 @@
           <p class="font-semibold">We host more than 120,000 websites</p>
         </div>
         <div id="hero-text" class="space-y-2">
-          <h1 class="text-[70px] font-clash leading-none">
+          <h1 class="text-[55px] lg:text-[70px] font-clash leading-none">
             Grow Online <br class="hidden md:block" />
             Business Faster.
           </h1>
@@ -60,12 +60,14 @@
             acquisition much user-friendly and boosting up sales.
           </p>
         </div>
-        <div id="hero-btn" class="flex items-center">
-          <button class="px-10 py-4 bg-secondary rounded-full text-white font-bold cursor-pointer">
+        <div id="hero-btn" class="flex flex-col lg-flex-row items-center">
+          <button
+            class="w-full lg:w-fit px-10 py-4 bg-secondary rounded-full text-white font-bold cursor-pointer"
+          >
             Try Free Trial
           </button>
           <button
-            class="px-10 py-4 font-semibold text-secondary flex items-center gap-1 cursor-pointer"
+            class="w-full lg:w-fit justify-center px-10 py-4 font-semibold text-secondary flex items-center gap-1 cursor-pointer"
           >
             <svg
               width="25"
@@ -132,7 +134,7 @@
           </button>
         </div>
       </div>
-      <div class="hero-img w-[500px]">
+      <div class="hero-img w-full md:w-[500px]">
         <img class="w-full" src="/hero1.png" alt="" />
       </div>
     </div>

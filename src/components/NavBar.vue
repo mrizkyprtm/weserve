@@ -27,9 +27,9 @@ const navLinks = [
 </script>
 
 <template>
-  <nav class="flex items-center justify-between max-w-7xl mx-auto py-10">
+  <nav class="flex items-center justify-between max-w-7xl mx-auto py-10 px-4 lg:px-0">
     <Logo />
-    <ul class="flex items-center gap-x-7">
+    <ul class="lg:flex items-center gap-x-7 hidden">
       <li v-for="link in navLinks" :key="link.name">{{ link.name }}</li>
     </ul>
     <div id="button" class="flex items-center gap-2">

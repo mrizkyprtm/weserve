@@ -32,7 +32,7 @@ const toggle = () => {
         @click="toggle"
         :aria-expanded="isActive"
         :aria-controls="`content-${id}`"
-        class="w-full p-5 text-left text-primary font-bold text-xl bg-white transition-colors duration-200 cursor-pointer flex justify-between items-center"
+        class="w-full p-5 text-left text-primary font-bold text-lg lg:text-xl bg-white transition-colors duration-200 cursor-pointer flex justify-between items-center"
       >
         <slot name="title">{{ title }}</slot>
         <div
