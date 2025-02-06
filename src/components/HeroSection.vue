@@ -60,7 +60,7 @@
             acquisition much user-friendly and boosting up sales.
           </p>
         </div>
-        <div id="hero-btn" class="flex flex-col lg-flex-row items-center">
+        <div id="hero-btn" class="flex flex-col lg:flex-row items-center">
           <button
             class="w-full lg:w-fit px-10 py-4 bg-secondary rounded-full text-white font-bold cursor-pointer"
           >
