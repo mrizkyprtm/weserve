@@ -8,6 +8,9 @@ import StatisticSection from '@/components/StatisticSection.vue'
 import ShowcaseSection from '@/components/ShowcaseSection.vue'
 import FaqSection from '@/components/FaqSection.vue'
 import CTASection from '@/components/CTASection.vue'
+import useLenis from './composables/useLenis'
+
+useLenis()
 </script>
 
 <template>
@@ -206,4 +209,21 @@ import CTASection from '@/components/CTASection.vue'
   </footer>
 </template>
 
-<style scoped></style>
+<style>
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+</style>
